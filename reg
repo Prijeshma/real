@@ -1,0 +1,262 @@
+register.jsp
+
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+
+<%@ include file="../header/home_header.html" %>
+
+
+
+
+
+
+
+
+
+<div class="col-md-4 col-sm-4 col-xs-4">
+
+    <h2>Register Here!</h2>
+
+    
+
+    <form method="post" action="/real_estate/register_action">
+
+
+
+        <table style="width: 550px" class="table">
+
+             <tr>
+
+                 <td colspan="4" style="background-color: #1b6d85;height: 50px"> </td>
+
+            </tr>
+
+            <tr>
+
+                <td>First Name : </td>
+
+                <td><input type="text" name="firstName" class="form-control" autofocus=""></td>
+
+                <td>Last Name : </td>
+
+                <td><input type="text" name="secondName" class="form-control"></td>
+
+            </tr>
+
+
+
+            <tr>
+
+                <td>type : </td>
+
+                <td><select name="type" class="form-control">
+
+                        <option value="seller">SELLER</option>
+
+                        <option value="buyer">BUYER</option>
+
+                    </select></td>
+
+                <td>phone : </td>
+
+                <td><input type="text" name="phone" class="form-control"></td>
+
+            </tr>
+
+
+
+            <tr>
+
+                <td>Email : </td>
+
+                <td><input type="text" name="email" class="form-control"></td>
+
+                <td>house name : </td>
+
+                <td><input type="text" name="houseName" class="form-control"></td>
+
+            </tr>
+
+
+
+            <tr>
+
+                <td>place </td>
+
+                <td><input type="text" name="place" class="form-control"></td>
+
+                <td>pin : </td>
+
+                <td><input type="text" name="pincode" class="form-control"></td>
+
+            </tr>
+
+
+
+            <tr>
+
+                <td>Gender : </td>
+
+                <td><select class="form-control" name="gender">
+
+                        <option>MALE</option>
+
+                        <option>FEMALE</option>
+
+                    </select></td>
+
+                <td>DOB : </td>
+
+                <td><input type="date" name="dob" class="form-control"></td>
+
+            </tr>
+
+
+
+
+
+
+
+            <tr>
+
+                <td>Set   username : </td>
+
+                <td><input type="text" name="username" class="btn btn-default"></td>
+
+                <td>Set  password : </td>
+
+                <td><input type="password" name="password" class="btn btn-default"></td>
+
+            </tr>
+
+
+
+
+
+
+
+
+
+            <tr>
+
+                <td></td><td></td><td></td>
+
+                <td><input type="submit" class="btn btn-primary" >
+
+                    <input type="reset" class="btn btn-danger" >
+
+                </td>
+
+            </tr>
+
+
+
+        </table>
+
+    </form>
+
+
+
+
+
+</div>
+
+
+
+
+
+<div class="col-md-2 col-sm-2 col-xs-2 "> 
+
+
+
+</div>
+
+
+
+<div class="col-md-5 col-sm-5 col-xs-5">
+
+
+
+
+
+    <div style="margin-left: 160px">
+
+        
+
+        <img src="${pageContext.request.contextPath}/temp_real_estate/img/up.png" height="200px" width="220px">
+
+        
+
+        <form method="post" action="/real_estate/login_action">
+
+            <h2>Login Here!</h2>
+
+            <table  class="table table-responsive" table-sm style="width:300px">
+
+                 <tr>
+
+                 <td colspan="2" style="background-color: #1b6d85;height: 50px"> </td>
+
+            </tr>
+
+                <tr>
+
+                    <td>Username : </td>
+
+                    <td><input type="text" name="username" class="form-control"></td>
+
+                </tr>
+
+
+
+                <tr>
+
+                    <td>Password : </td>
+
+                    <td><input type="text" name="password"  class="form-control"></td>
+
+                </tr>
+
+
+
+
+
+                <tr>
+
+                      <td>   <input type="reset" class="btn btn-danger" ></td>
+
+                      <td> <input  type="submit" class=" btn btn-primary" ></td>
+
+                </tr>
+
+
+
+            </table>
+
+        </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
